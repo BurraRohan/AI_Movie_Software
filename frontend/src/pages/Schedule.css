@@ -1,0 +1,137 @@
+.schedule-page {
+  width: 100%;
+}
+
+.schedule-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.view-controls {
+  display: flex;
+}
+
+.view-btn {
+  background: none;
+  border: 1px solid #ddd;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.view-btn:first-child {
+  border-radius: 4px 0 0 4px;
+}
+
+.view-btn:last-child {
+  border-radius: 0 4px 4px 0;
+}
+
+.view-btn.active {
+  background-color: #4a6eb5;
+  color: white;
+  border-color: #4a6eb5;
+}
+
+.project-filter {
+  display: flex;
+  align-items: center;
+}
+
+.project-filter label {
+  margin-right: 10px;
+  font-weight: 500;
+}
+
+.project-filter select {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.calendar-container {
+  margin-bottom: 30px;
+}
+
+.calendar-placeholder {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.upcoming-events h2 {
+  margin-bottom: 15px;
+}
+
+.events-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.event-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+}
+
+.event-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.event-header h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.event-project {
+  font-size: 12px;
+  background-color: #e2e8f0;
+  color: #4a5568;
+  padding: 3px 8px;
+  border-radius: 12px;
+}
+
+.event-details {
+  display: grid;
+  gap: 8px;
+}
+
+.event-detail {
+  display: flex;
+}
+
+.detail-label {
+  font-weight: 500;
+  width: 100px;
+}
+
+@media (max-width: 768px) {
+  .schedule-controls {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .view-controls {
+    margin-bottom: 10px;
+  }
+
+  .events-list {
+    grid-template-columns: 1fr;
+  }
+}
+

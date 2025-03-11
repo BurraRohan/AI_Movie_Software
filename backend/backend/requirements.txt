@@ -1,0 +1,10 @@
+flask
+diffusers
+torch
+transformers
+accelerate
+safetensors
+gtts
+Pillow
+python-dotenv
+opencv-python

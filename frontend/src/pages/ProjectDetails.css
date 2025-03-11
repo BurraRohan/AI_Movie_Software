@@ -1,0 +1,117 @@
+.project-details {
+  width: 100%;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.project-title {
+  margin: 0 0 5px 0;
+}
+
+.project-status {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  background-color: #e2e8f0;
+  color: #4a5568;
+}
+
+.project-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.project-tabs {
+  display: flex;
+  border-bottom: 1px solid #e2e8f0;
+  margin-bottom: 20px;
+  overflow-x: auto;
+}
+
+.tab-btn {
+  padding: 10px 20px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  font-size: 16px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.tab-btn.active {
+  border-bottom: 2px solid #4a6eb5;
+  color: #4a6eb5;
+  font-weight: 500;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.detail-item h4 {
+  margin: 0 0 5px 0;
+  color: #718096;
+  font-size: 14px;
+}
+
+.detail-item p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.locations-list {
+  list-style: none;
+  padding: 0;
+}
+
+.locations-list li {
+  padding: 8px 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.locations-list li:last-child {
+  border-bottom: none;
+}
+
+.people-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.schedule-table th,
+.schedule-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.schedule-table th {
+  font-weight: 500;
+  color: #4a5568;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  font-size: 18px;
+  color: #718096;
+}
+
